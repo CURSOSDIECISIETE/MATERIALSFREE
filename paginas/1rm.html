@@ -4,36 +4,34 @@
 <title>desplegable1.html</title> 
 <style type="text/css">
 * { padding: 0; 
-    margin: auto; 
+    margin: 0; 
     text-align: center;
 	
 	}
 
 body{
 	background-color: black; 
+  color: #feffe4;
+  font-size: 200%;
 }
 
 #navegador li { 
 	
 
-    background-color: #912525; 
-	
+  
 	float:inline-start;
-    list-style-type: none; 
+  list-style-type: none; 
 	position: relative; 
 	
 	}
 #subseccion1, #subseccion2, #subseccion3, #subseccion4 { 
 	position: relative; 
-	top: 100%; 
-	left: 0px;  
-    background-color: #41338b; 
-	font:normal 0.8em arial;  
-	display: none; 
+	
+   
+	display: none;
+   
 	}				 
-#navegador li:hover { 
-	background-color: #990033; 
-	}
+
 #navegador li a:link, #navegador li a:visited { 
     color: #feffe4; 
 	text-decoration: none; 
@@ -45,11 +43,68 @@ body{
 
 
 
+
+  .boton{
+		
+    color: rgb(204, 200, 193);
+
+    background: rgb(0, 0, 0);
+    
+    
+    padding:1% 0%;
+    text-align:center;
+    margin:2% 10%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          
+         
+          display:block;
+      
+          border-radius:4%;
+ 
+    border: 2px solid rgb(204, 200, 193);
+    box-shadow:5px 5px 5px rgb(106, 150, 163);
+    text-decoration: none;
+
+    font-size:200%;
+  }
+  .boton:hover{
+    background: rgb(94, 86, 86);
+  }
+
+
+
+
+  a{
+		
+    color: rgb(204, 200, 193);
+
+    background: rgb(0, 0, 0);
+    
+    
+    padding:2% 0%;
+    text-align:center;
+    margin:1% 15%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          
+         
+    display:block;
+    
+      
+    border-radius:4%;
+ 
+    border: 1px solid rgb(204, 200, 193);
+    box-shadow:7px 7px 7px rgb(59, 168, 196);
+    text-decoration: none;
+
+    font-size:120%;
+  }
+
+.vis{
+  margin-left: 10%;
+  position:absolute;
+}
+
 </style>
-
-
-
-
 
 <script type="text/javascript">
 function ver(n) {
@@ -60,27 +115,24 @@ function ocultar(n) {
          }
 </script>
 
-
-
-
-
-
 </head>
 <body>
-
+<h1>R.M.</h1>
+<hr>
 <div id="navegador">
   <ul>
     <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
-      <a href="#">Sección Uno</a>
+      <p class="boton" href="#">Analogia de figuras</p>
       <div id="subseccion1">
-        <p><a href="#"> Subsección uno uno</a></p>
-        <p><a href="#"> Subsección uno dos</a></p>
-        <p><a href="#"> Subsección uno tres</a></p>
-        <p><a href="#"> Subsección uno cuatro</a></p> 
+        <hr class="vis" width="1" size="500">
+        <p><a  href="https://drive.google.com/file/d/1_nW_blkB6zxjNJdxtSluLWB7SaOn3gKx/view?usp=sharing">VIDEO</a></p>
+        <p><a  href="https://drive.google.com/file/d/1oCmIcqc1SX5Sl1fe2FL838jPSyyP6GZN/view?usp=sharing">TEORIA</a></p>
+        <p><a  href="https://drive.google.com/file/d/1oCmIcqc1SX5Sl1fe2FL838jPSyyP6GZN/view?usp=sharing">EJERCICIOS</a></p>
+        <p><a  href="https://drive.google.com/file/d/1oCmIcqc1SX5Sl1fe2FL838jPSyyP6GZN/view?usp=sharing">EJERCICIOS RESUELTOS</a></p> 
       </div>
     </li>
     <li id="seccion2"  onmouseover="ver(2)" onmouseout="ocultar(2)">
-      <a href="#">Sección Dos</a>
+      <p class="boton" href="#">Sección Dos</p>
       <div id="subseccion2">
         <p><a href="#"> Subsección dos uno</a></p>
         <p><a href="#"> Subsección dos dos</a></p>
@@ -88,7 +140,7 @@ function ocultar(n) {
       </div>			
     </li>
     <li id="seccion3" onmouseover="ver(3)" onmouseout="ocultar(3)">
-    <a href="#">Sección Tres</a>
+    <p class="boton" href="#">Sección Tres</p>
       <div id="subseccion3">
         <p><a href="#"> Subsección tres uno</a></p>
         <p><a href="#"> Subsección tres dos</a></p>
@@ -98,13 +150,21 @@ function ocultar(n) {
       </div>	
     </li>
     <li id="seccion4" onmouseover="ver(4)" onmouseout="ocultar(4)">
-    <a href="#">Sección Cuatro</a> 
+    <p class="boton" href="#">Sección Cuatro</p> 
       <div id="subseccion4">
         <p><a href="#"> Subsección cuatro uno</a></p>
         <p><a href="#"> Subsección cuatro dos</a></p>
         <p><a href="#"> Subsección cuatro tres</a></p>
       </div>
     </li>
+    <li id="seccion5" onmouseover="ver(5)" onmouseout="ocultar(5)">
+      <p class="boton" href="#">Sección Cuatro</p> 
+        <div id="subseccion5">
+          <p><a href="#"> Subsección cuatro uno</a></p>
+          <p><a href="#"> Subsección cuatro dos</a></p>
+          <p><a href="#"> Subsección cuatro tres</a></p>
+        </div>
+      </li>
   </ul>
 
 </div>
