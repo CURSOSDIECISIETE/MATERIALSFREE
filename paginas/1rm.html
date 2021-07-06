@@ -81,7 +81,7 @@ body{
     background: rgb(0, 0, 0);
     
     
-    padding:2% 0%;
+    padding:1.5% 0%;
     text-align:center;
     margin:1% 15%;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -93,15 +93,26 @@ body{
     border-radius:4%;
  
     border: 1px solid rgb(204, 200, 193);
-    box-shadow:7px 7px 7px rgb(59, 168, 196);
+    box-shadow:7px 7px 7px #3ba8c4;
     text-decoration: none;
 
     font-size:120%;
   }
 
-.vis{
+.hrhorizontal{
   margin-left: 10%;
   position:absolute;
+}
+.fijo{
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+  background: black;
+  width: 100%;
+  margin: 0;
+  top:0%;
+  padding: 0;
+  font-size: 100%;
 }
 
 </style>
@@ -116,15 +127,19 @@ function ocultar(n) {
 </script>
 
 </head>
+<div class="fijo">
+  <h1>R.M.</h1>
+  <hr color="#3ba8c4" height="1">
+  </div>
 <body>
-<h1>R.M.</h1>
-<hr>
+
 <div id="navegador">
   <ul>
     <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
+      <br><br>
       <p class="boton" href="#">Analogia de figuras</p>
       <div id="subseccion1">
-        <hr class="vis" width="1" size="500">
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="500%">
         <p><a  href="https://drive.google.com/file/d/1_nW_blkB6zxjNJdxtSluLWB7SaOn3gKx/view?usp=sharing">VIDEO</a></p>
         <p><a  href="https://drive.google.com/file/d/1oCmIcqc1SX5Sl1fe2FL838jPSyyP6GZN/view?usp=sharing">TEORIA</a></p>
         <p><a  href="https://drive.google.com/file/d/1oCmIcqc1SX5Sl1fe2FL838jPSyyP6GZN/view?usp=sharing">EJERCICIOS</a></p>
