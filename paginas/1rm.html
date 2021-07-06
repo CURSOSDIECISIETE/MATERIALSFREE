@@ -6,6 +6,11 @@
 * { padding: 0; 
     margin: 0; 
 	}
+  body{
+    background: black;
+    color: rgb(204, 200, 193);
+    font-size: 200%;
+  }
   #header{
     margin:auto;
     
@@ -15,15 +20,15 @@
     list-style: none;
   }
   .nav li a {
-    background: #000;
-    color: #fff;
+   
+    color: rgb(204, 200, 193);
     text-decoration: none;
-    padding:10px 15px;
+    padding:2% 5%;
     display: block;
 
   }
-  .nav li a:hover {
-    background: lightcoral;
+   li a:hover {
+    background: rgb(94, 86, 86);
   }
   .nav > li {
     float: block;
@@ -31,7 +36,7 @@
   .nav li ul{
     display:none;
     position: absolute;
-    min-width: 140px;
+    min-width: 70%;
   }
   .nav li:hover > ul {
     display: block;
@@ -40,7 +45,7 @@
     position: relative;
   }
   .nav li ul  {
-    right: 50%;
+    left: 50%;
     top: opx;
     z-index: 1;
   }
@@ -49,6 +54,78 @@
 
 
 
+  .boton{
+            
+         
+        
+          
+            
+            
+            padding:0.1% 0%;
+            text-align:center;
+            margin:2% 10%;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                  
+                 
+                  display:block;
+              
+                  border-radius:4%;
+         
+            border: 2px solid rgb(204, 200, 193);
+            box-shadow:5px 5px 5px rgb(106, 150, 163);
+            text-decoration: none;
+        
+            font-size:200%;
+          }
+          .boton:hover{
+        background: rgb(94, 86, 86);
+       
+      }
+    li:hover{
+          background: rgb(94, 86, 86);
+        }
+       
+      .opciones{
+            
+     
+        
+            background: rgb(0, 0, 0);
+            
+            
+            padding:0.5% 0%;
+            text-align:center;
+            margin:1% 15%;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                  
+                 
+            display:block;
+            
+              
+            border-radius:4%;
+         
+            border: 1px solid rgb(204, 200, 193);
+            box-shadow:7px 7px 7px #3ba8c4;
+            text-decoration: none;
+        
+            font-size:80%;
+          }
+
+          .hrhorizontal{
+      margin-left: 12%;
+      position:absolute;
+    }
+          .fijo{
+      position: fixed;
+      text-align: center;
+      z-index: 2;
+      background: black;
+      color: rgb(245, 235, 235);
+      width: 100%;
+      margin: 0;
+      top:0%;
+      padding: 0;
+      font-size: 100%;
+    }
 
 </style>
 
@@ -59,41 +136,212 @@
 </head>
 <div class="fijo">
   <h1>R.M.</h1>
-  <hr color="#3ba8c4" height="1">
+  <hr color="#3ba8c4" height="1" >
   </div>
 <body>
 
 <div id="header">
   
   <ul class="nav">
-    <li><a href="#">inicio</a>
+
+
+
+    <li class="boton"></a>
+    </li>
+    <li class="boton"></a>
+    </li>
+    <li class="boton"><a href="#">Analogia de figuras</a>
       <ul>
-        <li><a href="#">subinicio 1</a></li>
-        <li><a href="#">sbinicio 2</a></li>
-        <li><a href="#">sbinicio 3</a></li>
-        <li><a href="#">sbinicio 4</a></li>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Distribucion de figuras</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Operaadores matematicos</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Analogia de figuras</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Distribucion de figuras</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Operaadores matematicos</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Analogia de figuras</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Distribucion de figuras</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Operaadores matematicos</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Analogia de figuras</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Distribucion de figuras</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Operaadores matematicos</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Analogia de figuras</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Distribucion de figuras</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Operaadores matematicos</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Analogia de figuras</a>
+      <ul>
+      <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Distribucion de figuras</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Operaadores matematicos</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Analogia de figuras</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Distribucion de figuras</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+    <li class="boton"><a href="#">Operaadores matematicos</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="400%">
+        <li class="opciones"><a href="#">VIDEO</a></li>
+        <li class="opciones"><a href="#">TEORIA</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a href="#">EJERCICIOS RESUELTOS</a></li>
       </ul>
     </li>
 
-    <li><a href="#">servicios </a>
-      <ul>
-        <li><a href="#">subinicio 1</a></li>
-        <li><a href="#">sbinicio 2</a></li>
-        <li><a href="#">sbinicio 3</a></li>
-        <li><a href="#">sbinicio 4</a></li>
-      </ul>
-    </li>
+    
 
-    <li><a href="#">acerca de</a>
-      <ul>
-        <li><a href="#">subinicio 1</a></li>
-        <li><a href="#">sbinicio 2</a></li>
-        <li><a href="#">sbinicio 3</a></li>
-        <li><a href="#">sbinicio 4</a></li>
-      </ul>
-    </li>
-
-    <li><a href="#">contacto</a></li>
   </ul>
 
 </div>
