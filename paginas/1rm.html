@@ -114,11 +114,13 @@
         
             background: rgb(0, 0, 0);
             
-            
+            position: absolute;
             padding:0.7% 0%;
+            margin-top: 3%;
             text-align:center;
-            margin:2% 20%;
-            margin-left: 2%;
+            margin-left:3%;
+            margin-right: 29%;
+            
             font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                   
                  
@@ -160,17 +162,33 @@
 
 .subop{
    
-  padding:0% 0%;
+ 
             text-align:center;
-            margin:0% 50%;
             
             margin-left: 0%;
+            margin-right: 5%;
             
 }
 
 .agrand{
-  font-size: 100%;
+  display: block;
+  font-size: 120%;
+ 
+
 }
+#next{
+   background:linear-gradient(30deg, crimson,sienna, royalblue, indianred, purple);   
+  padding: 5% 5%;
+  margin: 2%;
+  color: antiquewhite;
+  border-radius:10%;
+         
+            border: 1px solid rgb(204, 200, 193);
+}
+#next:hover{
+  background: none;
+}
+
 </style>
 
 
@@ -194,8 +212,8 @@
         <hr class="hrhorizontal" color="#3ba8c4" width="1" size="330%">
         <li class="opciones"><a Target="_blank">VIDEO</a>
           <ul>
-            <li class="subop"><input class="agrand" placeholder="introduce tu correo"></input></li>
-            <li class="subop"><input class="agrand" type="button" value="Entrar"></input></li>
+            <li class="subop"><input class="agrand" placeholder="Correo electronico"></input></li>
+            <li class="subop"><input class="agrand" id="next" type="button" value="Entrar"></input></li>
           </ul>
         </li>
         <li class="opciones"><a Target="_blank" href="#">TEORIA</a></li>
