@@ -3,18 +3,21 @@
 <head>
 <title>desplegable1.html</title> 
 <script type="text/javascript">
-  //function ejecutar(){
-   //var very = prompt("introduce tu correo")
+  function ejecutar(){
+   
 
-   //var a1 ="usuario"
-  // if(very ==a1){
-        
-       // window.location="https://youtu.be/nKToL4OZT4k";
-   // }
-   // else{
-    //    alert("active los cursos con su correo");
-   // }
- // }
+   var u1 ="usuario"
+   
+    if(document.form.login.value==u1){
+      
+        window.location="https://youtu.be/UCj0S2EEjaU";
+    }
+    else{
+        alert("su correo no tiene acceso ");
+    }
+	
+	
+ }
 
 
 
@@ -212,8 +215,10 @@
         <hr class="hrhorizontal" color="#3ba8c4" width="1" size="330%">
         <li class="opciones"><a Target="_blank">VIDEO</a>
           <ul>
-            <li class="subop"><input class="agrand" placeholder="Correo electronico"></input></li>
-            <li class="subop"><input class="agrand" id="next" type="button" value="Entrar"></input></li>
+            <form name="form">
+            <li class="subop"><input class="agrand" placeholder="Correo electronico"  type="text" name="login"></input></li>
+            <li class="subop"><input class="agrand" onclick="ejecutar()" id="next" type="button" value="Entrar" ></input></li>
+          </form>
           </ul>
         </li>
         <li class="opciones"><a Target="_blank" href="#">TEORIA</a></li>
