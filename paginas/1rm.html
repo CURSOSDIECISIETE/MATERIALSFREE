@@ -3,21 +3,31 @@
 <head>
 <title>desplegable1.html</title> 
 <script type="text/javascript">
-  function ejecutar(){
-   
+   var deelse = "su correo no tiene acceso"
+   var u_1 ="usuario1"
+   var u_2 ="usuario2"
+   var u_3 ="usuario3"
+   var u_4 ="usuario4"
+  
 
-   var u1 ="usuario"
-   
-    if(document.form.login.value==u1){
-      
-        window.location="https://youtu.be/UCj0S2EEjaU";
+  function ejecutar1(){
+    if(document.f_1.login.value==u_1 || document.f_1.login.value==u_2 || document.f_1.login.value==u_3){
+        window.open("https://youtu.be/UCj0S2EEjaU", "replace=false");
     }
     else{
-        alert("su correo no tiene acceso ");
+        alert(deelse);
     }
-	
-	
  }
+
+ function ejecutar2(){
+   if(document.f_2.login.value==u_1 || document.f_2.login.value==u_2 || document.f_2.login.value==u_3){
+       window.open("https://youtu.be/bhtchblfJg8?list=RDGMEMQ1dJ7wXfLlqCjwV0xfSNbA", "replace=false");
+   }
+   else{
+       alert(deelse);
+   }
+}
+
 
 
 
@@ -215,9 +225,9 @@
         <hr class="hrhorizontal" color="#3ba8c4" width="1" size="330%">
         <li class="opciones"><a Target="_blank">VIDEO</a>
           <ul>
-            <form name="form">
+            <form name="f_1">
             <li class="subop"><input class="agrand" placeholder="Correo electronico"  type="text" name="login"></input></li>
-            <li class="subop"><input class="agrand" onclick="ejecutar()" id="next" type="button" value="Entrar" ></input></li>
+            <li class="subop"><input class="agrand" onclick="ejecutar1()" id="next" type="button" value="Entrar" ></input></li>
           </form>
           </ul>
         </li>
@@ -226,6 +236,25 @@
         <li class="opciones"><a Target="_blank" href="#">EJERCICIOS RESUELTOS</a></li>
       </ul>
     </li>
+
+    <li class="boton"><a href="#">Distribucion de figuras2</a>
+      <ul>
+        <hr class="hrhorizontal" color="#3ba8c4" width="1" size="330%">
+        <li class="opciones"><a Target="_blank">VIDEO</a>
+          <ul>
+            <form name="f_2">
+            <li class="subop"><input class="agrand" placeholder="Correo electronico"  type="text" name="login"></input></li>
+            <li class="subop"><input class="agrand" onclick="ejecutar2()" id="next" type="button" value="Entrar" ></input></li>
+          </form>
+          </ul>
+        </li>
+        <li class="opciones"><a Target="_blank" href="#">TEORIA</a></li>
+        <li class="opciones"><a Target="_blank" href="#">EJERCICIOS</a></li>
+        <li class="opciones"><a Target="_blank" href="#">EJERCICIOS RESUELTOS</a></li>
+      </ul>
+    </li>
+   
+    
     <li class="boton"><a href="#">Analogia de figuras</a>
       <ul>
         <hr class="hrhorizontal" color="#3ba8c4" width="1" size="330%">
